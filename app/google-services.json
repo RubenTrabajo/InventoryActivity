@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "865274831931",
+    "project_id": "inventoryactivity-1657e",
+    "storage_bucket": "inventoryactivity-1657e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:865274831931:android:75f4ce6076a3db273fa81e",
+        "android_client_info": {
+          "package_name": "com.example.inventoryactivity"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnRX2igN_cuuMJVh06zBitFsVrHgMnJGs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
