@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     
     <ImageView
-        android:id="@+id/perfil_img_view"
+        android:id="@+id/producto_img_view"
         android:layout_width="52dp"
         android:layout_height="52dp"
         android:src="@drawable/product_icon"

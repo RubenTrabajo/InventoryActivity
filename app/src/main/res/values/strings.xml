@@ -2,4 +2,7 @@
     <string name="app_name">InventoryActivity</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="selecciona_categoria">Selecciona una categoria</string>
+    <string name="selecciona_moneda">Selecciona una moneda</string>
+    <string name="selecciona_actualizacion_precios">Selecciona cuando quieres que se actualice el gráfico</string>
 </resources>

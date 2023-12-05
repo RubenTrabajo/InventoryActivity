@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/layoutImagenNombreDescripcionProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageViewProducto"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/common_google_signin_btn_icon_dark_focused" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp">
+
+            <EditText
+                android:id="@+id/editTextNombreProducto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutCategoriaMoneda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/layoutImagenNombreDescripcionProducto"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categoría"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="8dp" />
+
+        <Spinner
+            android:id="@+id/spinnerCategoriaProducto"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:entries="@array/categorias"
+            android:prompt="@string/selecciona_categoria" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutMoneda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/layoutCategoriaMoneda"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Moneda"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="8dp" />
+
+        <Spinner
+            android:id="@+id/spinnerMonedaProducto"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:entries="@array/monedas"
+            android:prompt="@string/selecciona_moneda" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutPrecioCompraCantidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/layoutMoneda"
+        android:layout_marginTop="8dp">
+
+        <EditText
+            android:id="@+id/editTextPrecioCompraProducto"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Precio de compra" />
+
+        <EditText
+            android:id="@+id/editTextCantidadCompradaProducto"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Cantidad comprada" />
+
+        <EditText
+            android:id="@+id/editTextPrecioActualMercadoProducto"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Precio actual en el mercado" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutActualizacionPrecios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/layoutPrecioCompraCantidad"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Actualización de Precios"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="8dp" />
+
+        <Spinner
+            android:id="@+id/spinnerActualizacionPrecios"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:entries="@array/opciones_actualizacion_precios"
+            android:prompt="@string/selecciona_actualizacion_precios" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/layoutActualizacionPrecios"
+        android:layout_marginTop="16dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#E0E0E0"
+            android:id="@+id/chartContainer">
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/GraficoProducto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btn_Guardar_Producto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guardar Producto"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="4dp"/>
+
+            <Button
+                android:id="@+id/btn_Borrar_Producto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Borrar Producto"
+                android:layout_marginTop="8dp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

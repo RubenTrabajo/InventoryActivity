@@ -1,11 +1,11 @@
 package com.example.inventoryactivity;
 
+import android.widget.ImageView;
+
 public class InventoryModel {
 
     private String nombre;
-    private String descripcion;
     private String categoria;
-    private String imagen;
     private double precioCompra;
     private int cantidadComprada;
     private double precioActualMercado;
@@ -17,13 +17,10 @@ public class InventoryModel {
         // Necesario para la deserialización
     }
 
-    public InventoryModel(String nombre, String descripcion, String categoria, String imagen,
-                          double precioCompra, int cantidadComprada, double precioActualMercado,
-                          String actualizacionPrecios, String moneda) {
+    public InventoryModel(String nombre, String categoria, double precioCompra, int cantidadComprada, double precioActualMercado, String actualizacionPrecios, String moneda) {
         this.nombre = nombre;
-        this.descripcion = descripcion;
         this.categoria = categoria;
-        this.imagen = imagen;
+
         this.precioCompra = precioCompra;
         this.cantidadComprada = cantidadComprada;
         this.precioActualMercado = precioActualMercado;
@@ -39,13 +36,6 @@ public class InventoryModel {
         this.nombre = nombre;
     }
 
-    public String getDescripcion() {
-        return descripcion;
-    }
-
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
 
     public String getCategoria() {
         return categoria;
@@ -55,13 +45,6 @@ public class InventoryModel {
         this.categoria = categoria;
     }
 
-    public String getImagen() {
-        return imagen;
-    }
-
-    public void setImagen(String imagen) {
-        this.imagen = imagen;
-    }
 
     public double getPrecioCompra() {
         return precioCompra;

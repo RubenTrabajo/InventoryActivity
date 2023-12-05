@@ -1,5 +1,6 @@
 package com.example.inventoryactivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -45,6 +46,7 @@ public class InventoryFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 //Enviar a la actividad para añadir producto
+                startActivity(new Intent(getActivity(), InventoryDetailsActivity.class));
             }
         });
         return view;

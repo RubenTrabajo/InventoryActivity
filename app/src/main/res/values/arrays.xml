@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <!-- Array de Monedas -->
+        <array name="monedas">
+            <item>€</item>
+            <item>US$</item>
+            <item>£</item>
+            <item>¥</item>
+            <item>元</item>
+            <item>₽</item>
+
+        </array>
+
+        <!-- Array de Categorías -->
+        <array name="categorias">
+            <item>Ropa</item>
+            <item>Alimentación</item>
+            <item>Deportes</item>
+            <item>Electrdomésticos</item>
+            <item>Higiene y salud</item>
+            <item>Tecnología</item>
+            <item>Belleza</item>
+            <item>Maquillaje</item>
+            <item>Automotriz</item>
+            <item>Equipaje</item>
+            <item>Herramientas</item>
+            <item>Videojuegos</item>
+        </array>
+
+
+    <!-- Array de tiempos -->
+    <array name="opciones_actualizacion_precios">
+        <item>Minutos</item>
+        <item>Horas</item>
+        <item>Dias</item>
+        <item>Mes</item>
+        <item>Año</item>
+        <item>Decada</item>
+        </array>
+
+</resources>
